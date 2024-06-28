@@ -1,4 +1,8 @@
-import { DashOutlined, ProjectOutlined, ShopOutlined } from '@ant-design/icons';
+import {
+    DashboardOutlined,
+    ProjectOutlined,
+    ShopOutlined,
+} from '@ant-design/icons';
 import { IResourceItem } from '@refinedev/core';
 
 export const resources: IResourceItem[] = [
@@ -7,7 +11,7 @@ export const resources: IResourceItem[] = [
         list: '/',
         meta: {
             label: 'Dashboard',
-            icon: <DashOutlined />,
+            icon: <DashboardOutlined />,
         },
     },
     {
