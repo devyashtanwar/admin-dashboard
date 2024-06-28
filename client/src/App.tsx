@@ -13,7 +13,8 @@ import routerBindings, {
     DocumentTitleHandler,
     UnsavedChangesNotifier,
 } from '@refinedev/react-router-v6';
-import { App as AntdApp, Layout } from 'antd';
+import { App as AntdApp } from 'antd';
+import Layout from './components/layout';
 import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
 import { resources } from './config/resources';
 
