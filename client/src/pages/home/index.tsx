@@ -1,9 +1,36 @@
-import Layout from '@/components/layout';
+import { DealsChart, UpcomingEvents } from '@/components';
+import { Row, Col } from 'antd';
 
 export const Home = () => {
     return (
-        <Layout>
-            <div>Home</div>
-        </Layout>
+        <div>
+            <Row
+                gutter={[32, 32]}
+                style={{
+                    marginTop: '32px',
+                }}
+            >
+                <Col
+                    xs={24}
+                    sm={24}
+                    xl={8}
+                    style={{
+                        height: '460px',
+                    }}
+                >
+                    <UpcomingEvents />
+                </Col>
+                <Col
+                    xs={24}
+                    sm={24}
+                    xl={8}
+                    style={{
+                        height: '460px',
+                    }}
+                >
+                    <DealsChart />
+                </Col>
+            </Row>
+        </div>
     );
 };
