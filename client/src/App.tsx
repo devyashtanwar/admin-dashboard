@@ -19,6 +19,7 @@ import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
 import { resources } from './config/resources';
 import Create from './pages/company/create';
 import EditPage from './pages/company/edit';
+import TaskList from './pages/tasks/list';
 
 function App() {
     return (
@@ -85,6 +86,9 @@ function App() {
                                             path="edit/:id"
                                             element={<EditPage />}
                                         />
+                                    </Route>
+                                    <Route path="/tasks">
+                                        <Route index element={<TaskList />} />
                                     </Route>
                                 </Route>
                             </Routes>
