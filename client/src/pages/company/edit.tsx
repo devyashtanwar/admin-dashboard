@@ -2,7 +2,7 @@ import { Col, Form, Input, InputNumber, Row, Select } from 'antd';
 import { Edit, useForm, useSelect } from '@refinedev/antd';
 import { UPDATE_COMPANY_MUTATION } from '@/graphql/mutations';
 import CustomAvatar from '@/components/custom-avatar';
-import { getNameInitials } from '@/utilities';
+import getNameInitials from '@/utilities/get-name-initials';
 import { GetFieldsFromList } from '@refinedev/nestjs-query';
 import { USERS_SELECT_QUERY } from '@/graphql/queries';
 import SelectOptionWithAvatar from '@/components/select-option-with-avatar';

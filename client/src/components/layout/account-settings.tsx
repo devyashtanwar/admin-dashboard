@@ -5,7 +5,7 @@ import { GetFields, GetVariables } from '@refinedev/nestjs-query';
 import { CloseOutlined } from '@ant-design/icons';
 import { Button, Card, Drawer, Form, Input, Spin } from 'antd';
 
-import { getNameInitials } from '@/utilities';
+import getNameInitials from '@/utilities/get-name-initials';
 import { UPDATE_USER_MUTATION } from '@/graphql/mutations';
 
 import { Text } from '../text';
