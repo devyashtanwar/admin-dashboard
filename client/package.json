@@ -45,7 +45,7 @@
     },
     "scripts": {
         "dev": "refine dev",
-        "build": "tsc && refine build",
+        "build": "tsc --project tsconfig.vite.json && tsc && refine build",
         "preview": "refine start",
         "refine": "refine",
         "codegen": "graphql-codegen"
